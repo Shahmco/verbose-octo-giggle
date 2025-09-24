@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>السلة - متجر الشهم الأدوات الإلكترونية</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
+</head>
+<body class="cart-page">
+
+
+  <header>
+    <h1>⚡ SHAHM</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="products.html">المنتجات</a></li>
+        <li><a href="product-details.html">تفاصيل المنتجات</a></li>
+        <li><a href="cart.html" class="active">السلة</a></li>
+        <li><a href="orders.html">الطلبات</a></li>
+        <li><a href="register.html">إنشاء حساب</a></li>
+        <li><a href="contact.html">اتصل بنا</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <section class="cart-container">
+      <h2>🛒 سلة المشتريات</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>الصورة</th>
+            <th>المنتج</th>
+            <th>السعر</th>
+            <th>الكمية</th>
+            <th>الإجمالي</th>
+            <th>إجراء</th>
+          </tr>
+        </thead>
+        <tbody id="cart-items">
+   
+          <tr>
+            <td><img src="../images/laptop.jpg" alt="لابتوب" width="70"></td>
+            <td>لابتوب حديث</td>
+            <td>850$</td>
+            <td>
+              <button onclick="decreaseQty(this)">-</button>
+              <span>1</span>
+              <button onclick="increaseQty(this)">+</button>
+            </td>
+            <td>850$</td>
+            <td><button onclick="removeItem(this)">❌ حذف</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="cart-summary">
+        <h3>الإجمالي: <span id="total-price">850$</span></h3>
+        <button class="checkout-btn">✅ إتمام الشراء</button>
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <p>جميع الحقوق محفوظة © 2025 SHAHM</p>
+  </footer>
+
+</body>
+</html>

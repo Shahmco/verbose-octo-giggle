@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>إنشاء حساب - متجر الشهم للادوات الإلكترونية</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
+</head>
+<body class="register-page">
+
+  <header>
+    <h1> SHAHM</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="products.html">المنتجات</a></li>
+        <li><a href="product-details.html">تفاصيل المنتجات</a></li>
+        <li><a href="cart.html">السلة</a></li>
+        <li><a href="orders.html">الطلبات</a></li>
+        <li><a href="register.html" class="active">إنشاء حساب</a></li>
+        <li><a href="contact.html">اتصل بنا</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-container">
+      <h2> إنشاء حساب جديد</h2>
+      <p>انضم إلى <strong>TechStore</strong> واحصل على أفضل الأجهزة الإلكترونية بأحدث الأسعار.</p>
+
+      <form onsubmit="return validateForm()">
+        <div class="input-group">
+          <span class="icon"></span>
+          <input type="text" id="username" name="username" placeholder="اسم المستخدم">
+        </div>
+
+        <div class="input-group">
+          <span class="icon">✉️</span>
+          <input type="email" id="email" name="email" placeholder="البريد الإلكتروني">
+        </div>
+
+        <div class="input-group">
+          <span class="icon">🔑</span>
+          <input type="password" id="password" name="password" placeholder="كلمة المرور">
+        </div>
+
+        <button type="submit">✅ تسجيل</button>
+      </form>
+
+      <p class="note">بالتسجيل أنت توافق على <a href="#">الشروط والأحكام</a></p>
+      <p class="switch">لديك حساب؟ <a href="login.html">سجّل الدخول</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>جميع الحقوق محفوظة © 2025 SHAHM</p>
+  </footer>
+
+</body>
+</html>
